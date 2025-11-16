@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import SummaryCard from "./components/SummaryCard";
+import SummaryCard from "src/components/SummaryCard";
 import { NavLink } from "react-router-dom";
 import "./SummaryPage.css";
 import Backtbtn from "./back";
