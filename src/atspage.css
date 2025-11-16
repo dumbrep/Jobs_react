@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body, html {
+  
+    background-color: black;
+}
+
+.ats{
+    width: 100vw;
+
+}
+
+.results{
+    color: white;
+    width: 70vw;
+    border: 2px solid rgb(7, 206, 7);
+    border-radius: 10px;;
+    align-items: center;
+    margin-left: 15vw;
+    padding: 20px;
+    background-color: rgb(32,32,32);
+}
+.resume{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    color: #00FC11;
+}
+.descriptions{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+textarea{
+    width: 50vw;
+    height: 30vh;
+    border-radius: 5px;
+    background-color: rgb(71, 69, 69);
+    color: white;
+    padding: 10px;
+}
+
+.buttons{
+    padding: 20px;
+}
+
+.headers_ats_page{   
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Enable scrolling for the entire page */
+body {
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: black; /* Keep the dark theme */
+    color: white; /* Ensure text remains visible */
+}
+
+/* Custom scrollbar styling */
+body::-webkit-scrollbar {
+    width: 10px; /* Adjust width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #2b2b2b; /* Dark gray track */
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #4f4f4f; /* Gray scrollbar thumb */
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #6b6b6b; /* Slightly lighter gray on hover */
+}

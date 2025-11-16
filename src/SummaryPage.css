@@ -1,0 +1,64 @@
+.profile-page,
+.summary-list,
+.summary-card {
+  box-sizing: border-box;
+}
+
+/* PAGE */
+.profile-page {
+  background-color: #000000; 
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 16px; /* responsive side padding */
+}
+
+/* HEADER */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 12px; 
+  padding: 10px 0;
+}
+
+.greeting {
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  color: #00FC11; 
+  margin: 0;
+}
+
+/* SUMMARY LIST - always single column */
+.summary-list {
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  gap: 20px;
+  width: 100%;
+  max-width: 900px; /* optional centered limit */
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Each card fills full width */
+.summary-card {
+  width: 100%;
+}
+
+/* NO SUMMARY TEXT */
+.no-summary {
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 1rem;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+
+.summary-card {
+  width: 100% !important;
+  max-width: none !important;
+}

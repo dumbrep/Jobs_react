@@ -1,0 +1,45 @@
+.login-main{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+    border: 2px solid #3B3B3B;
+    border-radius: 8px;
+    height: 40vh;
+    width: 20vw;
+    
+}
+
+.loginBody{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.login-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.loginInputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-btn{
+    position: absolute;
+    left: 40px;
+    top:  40px;
+}
+
+.login-heading{
+    font-size: x-large;
+    font-weight: bolder;
+}

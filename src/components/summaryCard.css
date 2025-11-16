@@ -1,0 +1,83 @@
+.summary-card {
+    background-color: #191717;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    max-width: 91%;
+
+    margin: 0;        
+}
+
+.summary-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.interview-time, .overall-performance {
+    font-weight: 500;
+    color: #1DB954; /* Spotify green */
+    font-size: 1.1rem;
+}
+
+.question-highlights-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #b3b3b3; /* light grey */
+}
+
+.question-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.question-item {
+    background-color: #1e1e1e;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.question-item:hover {
+    background-color: #272727;
+}
+
+.question-text {
+    font-weight: 500;
+    color: #1DB954;
+}
+
+.key-points, .assessment {
+    color: #b3b3b3;
+    margin-top: 4px;
+}
+
+.strengths-section, .improvements-section {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.strengths {
+    color: #1DB954;
+}
+
+.improvement-list {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.improvement-item {
+    background-color: #1e1e1e;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #ff4b4b; /* subtle red for areas of improvement */
+    font-size: 0.95rem;
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.discription{
+    align-items: center;
+}
+
+.centre{
+    display: flex;
+    justify-content:  center;
+    color: white;
+    padding: 20px;
+    font-size: large;
+    gap: 0px;
+    width: 600px;
+    
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+.centre label{
+    text-align: left;
+    flex: 1;
+}
+
+.centre input , .centre select, .centre textarea{
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(159, 156, 156);
+    border-radius: 7px;   
+}
+
+.centre select{
+    width: 50px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap:20px;
+   
+}
+
+button{
+    background-color: rgb(0, 252, 17);
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: large;
+}
+
+textarea{
+    height: 70px;
+}
+
+li{
+    list-style: none;
+}
+
+label{
+    font-size: larger;
+    color: rgb(198, 196, 196);
+}
+
+.headers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    right: 7vw;
+}
+
+.summaries {
+    position: fixed;
+    align-items: end;
+    display: flex;
+    justify-content: end;
+    right: 20px;
+}
