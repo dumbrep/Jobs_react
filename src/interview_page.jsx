@@ -121,7 +121,7 @@ const Interview = () => {
                 <p>2. Response depends on internet speed.</p>
             </div>
 
-            <h1>Real Time Interview with Face Analysis</h1>
+            <h1>Real Time Interview</h1>
 
             <div className="video">
                 <Video />
