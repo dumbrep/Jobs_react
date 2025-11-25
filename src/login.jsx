@@ -11,7 +11,7 @@ function Login() {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    const res = await fetch("http://13.203.220.9/login", {
+    const res = await fetch("/api-node/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: userEmail, password: userPassword }),

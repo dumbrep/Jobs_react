@@ -51,7 +51,7 @@ function InterviewForm() {
             formData.append("experience", experience);
             formData.append("interview_type", interviewType);
 
-            const response = await fetch('http://3.110.117.237/resume', {
+            const response = await fetch('/api-fast/resume', {
                 method: "POST",
                 body: formData
             });

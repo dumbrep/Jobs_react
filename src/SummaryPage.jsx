@@ -17,7 +17,7 @@ const SummaryPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             const email = localStorage.getItem("jobreadyproEmail");
-            const response = await axios.post("http://13.203.220.9/getSummaries", { email: email });
+            const response = await axios.post("/api-node/getSummaries", { email: email });
             setSummary(response.data);
         }
         fetchData();

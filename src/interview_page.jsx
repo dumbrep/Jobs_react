@@ -99,7 +99,7 @@ const Interview = () => {
             form.append("email", email);
             form.append("session_id", session_id);
 
-            const req = await axios.post("http://3.110.117.237/summary", form);
+            const req = await axios.post("/api-fast/summary", form);
 
             console.log("Summary Response:", req.data);
             localStorage.removeItem("jobReadyPro-interviewSessionID");

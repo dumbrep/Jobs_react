@@ -43,14 +43,14 @@ function Ats() {
         formdata.append("file", resume);
         formdata.append("session_id", session_id);
 
-        await axios.post("http://3.110.117.237/get_resume_file", formdata);
+        await axios.post("/api-fast/get_resume_file", formdata);
 
         // 2️⃣ Request ATS response
         const formdata_new = new FormData();
         formdata_new.append("session_id", session_id);
 
         const response = await axios.post(
-            "http://3.110.117.237/ats_response",
+            "/api-fast/ats_response",
             formdata_new
         );
 

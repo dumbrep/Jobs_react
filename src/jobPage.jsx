@@ -23,7 +23,7 @@ function Jobs() {
         formdata.append("session_id", session_id);   // IMPORTANT
 
         const response = await axios.post(
-            "http://3.110.117.237/jobSearch",
+            "/api-fast/jobSearch",
             formdata,
             { headers : { "Content-Type": "multipart/form-data" } }
         );
