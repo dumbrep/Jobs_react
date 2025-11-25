@@ -55,7 +55,8 @@ const Interview = () => {
         setIsReady(false);
 
         // Open WebSocket with session_id
-        ws.current = new WebSocket(`ws://3.110.117.237/interview?session_id=${session_id}`);
+        ws.current = new WebSocket(`wss://jobreadypro.fun/api-fast/interview?session_id=${session_id}`);
+
         console.log("Connected to WebSocket with session:", session_id);
 
         ws.current.onopen = () => console.log("Interview WebSocket connected");
