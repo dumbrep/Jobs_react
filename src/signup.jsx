@@ -12,7 +12,7 @@ function Signup() {
   const navigate = useNavigate();
 
   const handleSignup = async () => {
-    const res = await fetch("https://jobs-nodejs.onrender.com/signup", {
+    const res = await fetch("http://13.203.220.9/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: userName, email: userEmail, password: userPassword }),

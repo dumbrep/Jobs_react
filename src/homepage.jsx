@@ -35,6 +35,12 @@ function Home() {
     }, [vantaEffect]);
     const userName = localStorage.getItem("jobreadyproUsername");
 
+
+    function generateSessionID(page){
+        const session_id = crypto.randomUUID();
+        localStorage.setItem(`jobReadyPro-${page}`, session_id);
+    }
+
     return (
         <div ref={vantaRef} className="home">
             <div className="navbar">
@@ -46,7 +52,7 @@ function Home() {
                             <button className="nav-btn">Login</button>
                         </NavLink>
                         <NavLink to="/signup">
-                            <button className="nav-btn">Signup</button>
+                            <button className="nav-btn" >Signup</button>
                         </NavLink>
                     </>
                 )}
@@ -61,8 +67,8 @@ function Home() {
 
             <div className="buttons_home">
                 <NavLink to="/interviewForm"><button>Interview Practice</button></NavLink>
-                <NavLink to="/atsChecking"><button>Resume Analysis</button></NavLink>
-                <NavLink to="/jobs"><button>Jobs Search</button></NavLink>
+                <NavLink to="/atsChecking"  ><button onClick={generateSessionID('atsChecking')}>Resume Analysis</button></NavLink>
+                <NavLink to="/jobs"><button onClick={generateSessionID('atsJobsSearch')}>Jobs Search</button></NavLink>
             </div>
         </div>
     )

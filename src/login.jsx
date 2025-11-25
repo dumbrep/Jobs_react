@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "./login.css"
 import Backtbtn from "./back";
-import { div } from "three/tsl";
 
 
 function Login() {
@@ -12,7 +11,7 @@ function Login() {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    const res = await fetch("https://jobs-nodejs.onrender.com/login", {
+    const res = await fetch("http://13.203.220.9/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: userEmail, password: userPassword }),

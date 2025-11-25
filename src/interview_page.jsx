@@ -55,7 +55,7 @@ const Interview = () => {
         setIsReady(false);
 
         // Open WebSocket with session_id
-        ws.current = new WebSocket(`wss://jobreadypro-fatsapi.onrender.com/interview?session_id=${session_id}`);
+        ws.current = new WebSocket(`ws://3.110.117.237/interview?session_id=${session_id}`);
         console.log("Connected to WebSocket with session:", session_id);
 
         ws.current.onopen = () => console.log("Interview WebSocket connected");
@@ -99,7 +99,7 @@ const Interview = () => {
             form.append("email", email);
             form.append("session_id", session_id);
 
-            const req = await axios.post("https://jobreadypro-fatsapi.onrender.com/summary", form);
+            const req = await axios.post("http://3.110.117.237/summary", form);
 
             console.log("Summary Response:", req.data);
             localStorage.removeItem("jobReadyPro-interviewSessionID");

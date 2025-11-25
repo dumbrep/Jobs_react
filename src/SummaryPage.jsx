@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import SummaryCard from "./components/SummaryCard";
+import SummaryCard from "./components/summaryCard";
 import { NavLink } from "react-router-dom";
 import "./SummaryPage.css";
 import Backtbtn from "./back";
@@ -17,7 +17,7 @@ const SummaryPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             const email = localStorage.getItem("jobreadyproEmail");
-            const response = await axios.post("https://jobs-nodejs.onrender.com/getSummaries", { email: email });
+            const response = await axios.post("http://13.203.220.9/getSummaries", { email: email });
             setSummary(response.data);
         }
         fetchData();
