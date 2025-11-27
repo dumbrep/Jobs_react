@@ -7,6 +7,7 @@ import "./jobPage.css"
 function Jobs() {
     const [jobs,setJobs] = useState([]);
     const [isJobs,setIsJobs] = useState("");
+    const [note, setNote] = useState(true);
 
     // Load or create session ID for job search
     let session_id = localStorage.getItem("jobReadyPro-jobSessionID");
@@ -23,7 +24,7 @@ function Jobs() {
         formdata.append("session_id", session_id);   // IMPORTANT
 
         const response = await axios.post(
-            "/api-fast/jobSearch",
+            "http://3.110.117.237/jobSearch",
             formdata,
             { headers : { "Content-Type": "multipart/form-data" } }
         );
@@ -31,6 +32,7 @@ function Jobs() {
         if (response.data.jobs && response.data.jobs.length > 0) {
             setJobs(response.data.jobs);
             setIsJobs("");
+            setNote(false)
         } else {
             setJobs([]);
             setIsJobs("Sorry, No jobs available right now. Please try again later.");
@@ -73,7 +75,7 @@ function Jobs() {
             </div>
 
             <div className="jobInstrction">
-                <p>Note : This may take a few minutes after the resume is uploaded.</p>
+                {note && <p>Note : This may take a few minutes after the resume is uploaded.</p> }
             </div>
         </div>
     );
